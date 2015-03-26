@@ -7,6 +7,31 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="sidebar">
+  <div id="logo">
+    <%= link_to "Chad's Blog", root_path %>
+    <!--  <%= link_to root_path do %>
+      <%= image_tag "logo.png" %>
+    <% end %> --> 
+  </div>
+  
+  <ul>
+    <li class="category">Website</li>
+    <li><%= link_to "Blog", root_path %></li>
+    <li>About</li>
+  </ul>
+  
+  <ul>
+    <li class="category">Social</li>
+    <li><%= link_to "Twitter", "https://twitter.com/chadpflores" %></li>
+    <li><%= link_to "Instagram", "https://instagram.com/cpflores/" %></li>
+    <li><%= link_to "Github", "https://github.com/cpflores" %></li>
+    <li><%= link_to "Email", "mailto:chadwickflores@gmail.com" %></li>
+  </ul>
+
+  <p class="sign_in">Admin Login</p>
+</div>
+
 
 <%= yield %>
 
